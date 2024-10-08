@@ -1,0 +1,124 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  padding: 32px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 0%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font: 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: rgb(31, 41, 55);
+}
+
+.spacer {
+  height: 16px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(31, 41, 55);
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.otp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.input-container {
+  width: 12%;
+  border-bottom: 2px solid rgb(107, 114, 128);
+}
+
+.otp-input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(31, 41, 55);
+  text-align: center;
+  outline: none;
+  padding: 8px 12px;
+}
+
+.feedback-container {
+  margin-top: 32px;
+}
+
+.feedback-text {
+  display: flex;
+  align-items: center;
+  font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(31, 41, 55);
+}
+
+.resend-otp {
+  color: rgb(76, 29, 149);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-container {
+  margin-top: 32px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(76, 29, 149);
+  color: rgb(249, 250, 251);
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.footer-text {
+  font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(31, 41, 55);
+}
+
+.sign-in {
+  color: rgb(76, 29, 149);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.spacer-horizontal {
+  width: 8px;
+}
+
+.spacer-horizontal-small {
+  width: 4px;
+}

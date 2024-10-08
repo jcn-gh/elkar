@@ -1,0 +1,303 @@
+.cl-rootBox {
+  box-sizing: border-box;
+  width: fit-content;
+  font-family: inherit;
+  font-style: normal;
+}
+
+.cl-signIn-root {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  padding: 2.375rem 2rem 3rem;
+  background-color: white;
+  transition: background-color 200ms, border-color 200ms, color 200ms, fill 200ms, stroke 200ms, opacity 200ms, box-shadow 200ms, transform 200ms;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 24px 48px;
+  width: 25rem;
+  margin: 0 0 1.75rem;
+  max-width: calc(-0.75rem + 100vw);
+}
+
+.cl-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.cl-logoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 48px;
+}
+
+.cl-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.cl-headerTitle {
+  margin: 0;
+  color: black;
+  font-weight: 600;
+  font-size: responsiveScreenFontSize(2.5);
+  line-height: 1.5;
+}
+
+.cl-headerSubtitle {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: responsiveScreenFontSize(2);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.cl-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.cl-socialButtons {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+}
+
+.cl-socialButtonsBlockButton {
+  margin: 0;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms;
+  font-size: responsiveScreenFontSize(1.75);
+  line-height: responsiveScreenHeight(0.14);
+}
+
+.cl-dividerRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cl-dividerLine {
+  flex: 1;
+  height: responsiveScreenHeight(0.14);
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.cl-dividerText {
+  margin: 0 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: responsiveScreenFontSize(1.625);
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+.cl-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.phone-number-button {
+    visibility: hidden;
+    position: absolute;
+}
+
+.cl-formFieldRow {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.cl-formField {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.cl-formFieldLabelRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.cl-formFieldLabel {
+  color: black;
+  font-weight: 500;
+  font-size: responsiveScreenFontSize(1.625);
+  line-height: 1.375;
+}
+
+.cl-phoneInputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.cl-selectButton {
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.375rem 0 0 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms;
+  font-size: responsiveScreenFontSize(1.625);
+  line-height: 1.375;
+}
+
+.cl-formFieldInput {
+  padding: 0.625rem 1rem;
+  border-radius: 0 0.375rem 0.375rem 0;
+  border: 1px solid transparent;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: responsiveScreenFontSize(1.625);
+  line-height: 1.25;
+}
+
+.cl-formButtonPrimary {
+  margin: 0;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #103FEF;
+  color: white;
+  border: 0;
+  outline: 0;
+  user-select: none;
+  transition: background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: responsiveScreenFontSize(1.375);
+  letter-spacing: 0.5px;
+  line-height: responsiveScreenHeight(0.14);
+  text-transform: uppercase;
+  min-height: 2.25rem;
+  width: 100%;
+}
+
+.cl-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row;
+  box-sizing: inherit;
+}
+
+.cl-footerAction {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-flow: row;
+  gap: 0.25rem;
+  box-sizing: inherit;
+}
+
+.cl-footerActionText {
+  margin: 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: responsiveScreenFontSize(1.625);
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.cl-footerActionLink {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: responsiveScreenFontSize(1.625);
+  line-height: 1.25;
+  color: rgb(16, 63, 239);
+}
+
+.cl-footerPages {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-flow: row;
+  gap: 0.75rem;
+  box-sizing: inherit;
+}
+
+.cl-internal-b3fm6y {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+  gap: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.375rem 1rem;
+  box-sizing: inherit;
+  color: white;
+  background-color: rgb(16, 63, 239);
+  position: absolute;
+  transform-origin: left bottom 0;
+  border-radius: 0 0 0.375rem 0.375rem;
+  left: 0;
+  bottom: -1px;
+  transform: translateX(2rem) translateY(100%);
+  border-top-color: transparent;
+}
+
+.cl-internal-11lqcp9 {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: responsiveScreenHeight(0.14);
+  color: inherit;
+  letter-spacing: 0;
+  font-size: responsiveScreenFontSize(1.25);
+}
+
+.cl-internal-1h80eck {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: responsiveScreenFontSize(1.625);
+  line-height: 1.25;
+  color: inherit;
+}
+
+.cl-internal-1acnfz5 {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 0.875rem;
+  transform: translateY(1px);
+}
